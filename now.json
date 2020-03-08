@@ -1,0 +1,29 @@
+{
+  "env": {
+    "FIREBASE_PROJECT_ID": "rauchg-blog",
+    "FIREBASE_PRIVATE_KEY": "@blog-firebase-private-key",
+    "FIREBASE_CLIENT_EMAIL": "@blog-firebase-client-email"
+  },
+  "routes": [
+    {
+      "src": "/atom\\/?",
+      "headers": {
+        "content-type": "text/xml"
+      }
+    },
+    {
+      "src": "/essays.*",
+      "headers": {
+        "location": "/"
+      },
+      "status": 302
+    },
+    {
+      "src": "/slackin\\/?.*",
+      "headers": {
+        "location": "https://github.com/rauchg/slackin"
+      },
+      "status": 302
+    }
+  ]
+}
