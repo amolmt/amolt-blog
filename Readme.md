@@ -2,7 +2,7 @@
 
 This is the blog that powers `amolt.me`, built on
 [next.js](https://zeit.co/blog/next) and
-deployed to the cloud via [now](https://zeit.co/now).
+deployed on [now](https://zeit.co/now).
 
 ## How to run
 
